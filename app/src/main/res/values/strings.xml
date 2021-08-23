@@ -5,6 +5,9 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_emoties">Emoties</string>
     <string name="title_talenten">Talenten</string>
+    <string name="title_hulpbronnen">Hulpbronnen</string>
+    <string name="title_levenslijn">Levenslijn</string>
+    <string name="title_doelen">Doelen</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

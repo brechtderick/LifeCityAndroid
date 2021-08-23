@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.hulpbronnen.HulpbronnenFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/hulpbronnen_titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        app:layout_constraintBottom_toTopOf="@id/hulpbronnen_naam_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/hulpbronnen_naam_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="hint"
+        app:layout_constraintEnd_toEndOf="@id/hulpbronnen_titel"
+        app:layout_constraintStart_toStartOf="@id/hulpbronnen_titel"
+        app:layout_constraintTop_toBottomOf="@id/hulpbronnen_titel" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/hulpbronnen_beschrijving_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="hint"
+        app:layout_constraintEnd_toEndOf="@id/hulpbronnen_naam_input"
+        app:layout_constraintStart_toStartOf="@id/hulpbronnen_naam_input"
+        app:layout_constraintTop_toBottomOf="@id/hulpbronnen_naam_input" />
+
+    <Button
+        android:id="@+id/add_hulpbron_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        app:layout_constraintEnd_toEndOf="@id/hulpbronnen_beschrijving_input"
+        app:layout_constraintStart_toStartOf="@id/hulpbronnen_beschrijving_input"
+        app:layout_constraintTop_toBottomOf="@id/hulpbronnen_beschrijving_input" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hulpbronnen_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_hulpbron_button" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

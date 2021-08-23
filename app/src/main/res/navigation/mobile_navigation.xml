@@ -3,25 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
-
-    <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.lifecityandroid.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.lifecityandroid.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.lifecityandroid.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+    app:startDestination="@+id/navigation_emoties">
 
     <fragment
         android:id="@+id/navigation_emoties"
@@ -31,6 +13,12 @@
         <action
             android:id="@+id/action_emoties_to_talenten"
             app:destination="@id/navigation_talenten" />
+        <action
+            android:id="@+id/action_navigation_emoties_to_navigation_doelen"
+            app:destination="@id/navigation_doelen" />
+        <action
+            android:id="@+id/action_navigation_emoties_to_navigation_levenslijn"
+            app:destination="@id/navigation_levenslijn" />
     </fragment>
 
     <fragment
@@ -41,6 +29,72 @@
         <action
             android:id="@+id/action_talenten_to_emoties"
             app:destination="@id/navigation_emoties" />
+        <action
+            android:id="@+id/action_talenten_to_hulpbronnen"
+            app:destination="@id/navigation_hulpbronnen" />
+        <action
+            android:id="@+id/action_navigation_talenten_to_navigation_doelen"
+            app:destination="@id/navigation_doelen" />
+        <action
+            android:id="@+id/action_navigation_talenten_to_navigation_levenslijn"
+            app:destination="@id/navigation_levenslijn" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_hulpbronnen"
+        android:name="com.example.lifecityandroid.ui.hulpbronnen.HulpbronnenFragment"
+        android:label="@string/title_hulpbronnen"
+        tools:layout="@layout/fragment_hulpbronnen" >
+        <action
+            android:id="@+id/action_hulpbronnen_to_emoties"
+            app:destination="@id/navigation_emoties" />
+        <action
+            android:id="@+id/action_hulpbronnen_to_talenten"
+            app:destination="@id/navigation_talenten" />
+        <action
+            android:id="@+id/action_navigation_hulpbronnen_to_navigation_doelen"
+            app:destination="@id/navigation_doelen" />
+        <action
+            android:id="@+id/action_navigation_hulpbronnen_to_navigation_levenslijn"
+            app:destination="@id/navigation_levenslijn" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_levenslijn"
+        android:name="com.example.lifecityandroid.ui.levenslijn.LevenslijnFragment"
+        android:label="@string/title_levenslijn"
+        tools:layout="@layout/fragment_levenslijn" >
+        <action
+            android:id="@+id/action_navigation_levenslijn_to_navigation_doelen"
+            app:destination="@id/navigation_doelen" />
+        <action
+            android:id="@+id/action_navigation_levenslijn_to_navigation_hulpbronnen"
+            app:destination="@id/navigation_hulpbronnen" />
+        <action
+            android:id="@+id/action_navigation_levenslijn_to_navigation_talenten"
+            app:destination="@id/navigation_talenten" />
+        <action
+            android:id="@+id/action_navigation_levenslijn_to_navigation_emoties"
+            app:destination="@id/navigation_emoties" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_doelen"
+        android:name="com.example.lifecityandroid.ui.doelen.DoelenFragment"
+        android:label="@string/title_doelen"
+        tools:layout="@layout/fragment_doelen" >
+        <action
+            android:id="@+id/action_navigation_doelen_to_navigation_levenslijn"
+            app:destination="@id/navigation_levenslijn" />
+        <action
+            android:id="@+id/action_navigation_doelen_to_navigation_emoties"
+            app:destination="@id/navigation_emoties" />
+        <action
+            android:id="@+id/action_navigation_doelen_to_navigation_talenten"
+            app:destination="@id/navigation_talenten" />
+        <action
+            android:id="@+id/action_navigation_doelen_to_navigation_hulpbronnen"
+            app:destination="@id/navigation_hulpbronnen" />
     </fragment>
 
 </navigation>
