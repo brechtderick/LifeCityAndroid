@@ -22,4 +22,25 @@
         android:name="com.example.lifecityandroid.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_emoties"
+        android:name="com.example.lifecityandroid.ui.emoties.EmotiesFragment"
+        android:label="@string/title_emoties"
+        tools:layout="@layout/fragment_emoties" >
+        <action
+            android:id="@+id/action_emoties_to_talenten"
+            app:destination="@id/navigation_talenten" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_talenten"
+        android:name="com.example.lifecityandroid.ui.talenten.TalentenFragment"
+        android:label="@string/title_talenten"
+        tools:layout="@layout/fragment_talenten" >
+        <action
+            android:id="@+id/action_talenten_to_emoties"
+            app:destination="@id/navigation_emoties" />
+    </fragment>
+
 </navigation>

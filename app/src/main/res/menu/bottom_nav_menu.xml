@@ -16,4 +16,14 @@
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
 
+    <item
+        android:id="@+id/navigation_emoties"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_emoties" />
+
+    <item
+        android:id="@+id/navigation_talenten"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_talenten" />
+
 </menu>
