@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".login.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/registerLogo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/registerTitle_text"
+                style="@style/Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/maak_een_account"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerLogo_img" />
+
+            <EditText
+                android:id="@+id/registerNaam_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/voornaam"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/registerTitle_text"
+                app:layout_constraintStart_toStartOf="@+id/registerTitle_text"
+                app:layout_constraintTop_toBottomOf="@+id/registerTitle_text" />
+
+            <EditText
+                android:id="@+id/registerAchternaam_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/achternaam"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/registerNaam_editText"
+                app:layout_constraintStart_toStartOf="@+id/registerNaam_editText"
+                app:layout_constraintTop_toBottomOf="@+id/registerNaam_editText" />
+
+
+
+            <EditText
+                android:id="@+id/registerEmail_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="@+id/registerAchternaam_editText"
+                app:layout_constraintStart_toStartOf="@+id/registerAchternaam_editText"
+                app:layout_constraintTop_toBottomOf="@+id/registerAchternaam_editText" />
+
+
+            <Button
+                android:id="@+id/registerConfirm_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/registreer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="@+id/registerStraatNr_editText"
+                app:layout_constraintTop_toBottomOf="@+id/registerPassword_editText" />
+
+            <TextView
+                android:id="@+id/registreerAlreadyHaveAccount_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/heeft_u_al_een_account"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/registerLoginInstead_btn"
+                app:layout_constraintEnd_toStartOf="@+id/registerLoginInstead_btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerConfirm_button" />
+
+            <Button
+                android:id="@+id/registerLoginInstead_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/log_dan_in"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toEndOf="@+id/registreerAlreadyHaveAccount_text"
+                app:layout_constraintTop_toBottomOf="@+id/registerConfirm_button" />
+
+            <EditText
+                android:id="@+id/registerPassword_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/paswoord"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toStartOf="@+id/registerPasswordConfirm_editText"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerEmail_editText" />
+
+            <EditText
+                android:id="@+id/registerPasswordConfirm_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/bevestig_paswoord"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/registerPassword_editText"
+                app:layout_constraintTop_toTopOf="@+id/registerPassword_editText" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

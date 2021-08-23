@@ -8,6 +8,7 @@
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2677083333333333" />
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2677083333333333" />
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2677083333333333" />
+        <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/activity_login.xml" value="0.2515625" />
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/fragment_dashboard.xml" value="0.35260416666666666" />
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/fragment_doelen.xml" value="0.2515625" />
@@ -15,7 +16,10 @@
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/fragment_home.xml" value="0.35260416666666666" />
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/fragment_hulpbronnen.xml" value="0.36666666666666664" />
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/fragment_item_list.xml" value="0.17831813576494426" />
+        <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/fragment_logged_in.xml" value="0.2515625" />
+        <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/fragment_login.xml" value="0.33" />
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/fragment_notifications.xml" value="0.35260416666666666" />
+        <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/fragment_register.xml" value="0.25" />
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/layout/fragment_talenten.xml" value="0.36666666666666664" />
         <entry key="..\:/coding/ep3 projecten 3/ep3/RealLifeCityAndroid/app/src/main/res/menu/bottom_nav_menu.xml" value="0.35260416666666666" />
       </map>
