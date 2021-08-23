@@ -21,4 +21,6 @@
     <string name="log_dan_in">log in</string>
     <string name="paswoord">paswoord</string>
     <string name="bevestig_paswoord">bevestig paswoord</string>
+    <string name="welkom">welkom</string>
+    <string name="naarApp">naar app</string>
 </resources>
